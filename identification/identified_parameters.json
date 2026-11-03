@@ -1,0 +1,136 @@
+{
+  "procedure": "encoder-only (q1, q2, timestamps, arm command); no motor torque",
+  "model": "qdd2 = -kappa cos(q2) qdd1 + rho sin(q2)cos(q2) qd1^2 - omega2 sin(q2) - beta qd2 - phi tanh(qd2/v_s); q2 = 0 hanging",
+  "v_s": 0.01,
+  "savgol": [
+    41,
+    4
+  ],
+  "as5600_zero_offset_rad": 0.054125269600000005,
+  "ratios": {
+    "kappa": 0.944962464647251,
+    "rho": 0.9646959974841531,
+    "omega2": 148.33345325905896,
+    "beta": 0.47426605813191774,
+    "phi": 0.9532685439932119
+  },
+  "ratios_1sigma": {
+    "kappa": 2.2473476843576045e-05,
+    "rho": 0.00020051335074985246,
+    "omega2": 0.0007050875630076202,
+    "beta": 3.1082368457790854e-05,
+    "phi": 0.00039466314981623235
+  },
+  "ratios_stageA": {
+    "kappa": 0.9414980896981356,
+    "rho": 0.9763465576739938,
+    "omega2": 148.36378951303988,
+    "beta": 0.5083469290908348,
+    "phi": 0.6467657641974964
+  },
+  "repeatability": {
+    "group 1": {
+      "kappa": 0.9435080616261111,
+      "rho": 0.9539394307758333,
+      "omega2": 148.3297784542166,
+      "beta": 0.47599776920145326,
+      "phi": 0.9405497557088738
+    },
+    "group 2": {
+      "kappa": 0.9452574824187954,
+      "rho": 0.9637695708739331,
+      "omega2": 148.33185725336966,
+      "beta": 0.4745352397993033,
+      "phi": 0.9509622814804384
+    }
+  },
+  "absolute_from_added_mass": {
+    "J2": 5.478517428407204e-05,
+    "G": 0.0081264740889558,
+    "K": 5.176993331760591e-05,
+    "J1": 5.285103835331605e-05,
+    "b_p": 2.5982748651776958e-05,
+    "F_p": 5.222498332219171e-05
+  },
+  "absolute_1sigma": {
+    "J2": 3.505933882555516e-07,
+    "G": 5.2004742316020514e-05,
+    "K": 3.31299880048666e-07,
+    "J1": 3.383943887576027e-07,
+    "b_p": 1.6628326366619237e-07,
+    "F_p": 3.349083259283458e-07
+  },
+  "pendulum_com": {
+    "l_p": 0.04576722415933565,
+    "l_p_1sigma": 0.0002928838107243173,
+    "c_p_plus_Ipxz_over_mplp": 0.0004948828097440239,
+    "I_px": 1.6872211872831166e-05
+  },
+  "not_identifiable": [
+    "J0 (arm inertia about motor axis)",
+    "b_a, F_a (arm friction)",
+    "m_a, x_a (arm mass, COM)",
+    "m_p and l_p separately (only G = g m_p l_p; l_p only with a pre-assembly weighing)",
+    "I_py, I_pz separately",
+    "c_p and I_pxz separately"
+  ],
+  "control_model_upright": {
+    "A": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        148.33345325905896,
+        0.0,
+        -0.47426605813191774
+      ]
+    ],
+    "B": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        1.0
+      ],
+      [
+        0.944962464647251
+      ]
+    ],
+    "state": [
+      "q1",
+      "q2 - pi",
+      "qd1",
+      "qd2"
+    ],
+    "input": "arm acceleration"
+  },
+  "validation_fit_pct": {
+    "multisine_val | CAD guess": 83.89840078096051,
+    "multisine_val | identified": 99.28921766530925,
+    "swing_A0.60_f1.30_val | CAD guess": 76.4984873879913,
+    "swing_A0.60_f1.30_val | identified": 99.44699037522618,
+    "free_decay_045deg_val | CAD guess": 58.9057684108579,
+    "free_decay_045deg_val | identified": 98.60572639959642,
+    "massD2_decay_040deg_val | CAD guess": 44.30542288935002,
+    "massD2_decay_040deg_val | identified": 97.46919110017514
+  }
+}

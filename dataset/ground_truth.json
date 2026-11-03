@@ -1,0 +1,88 @@
+{
+  "note": "Hidden truth of rz42_real_plant*.xml. Read ONLY by 03_evaluate_against_truth.ipynb.",
+  "physical": {
+    "m_a": 0.03784,
+    "x_a": 0.0362,
+    "J_a": 2.865e-05,
+    "m_p": 0.01812,
+    "l_p": 0.0458,
+    "c_p": -0.0009,
+    "I_px": 1.68e-05,
+    "I_py": 1.63e-05,
+    "I_pz": 9.6e-07,
+    "I_pxz": 1.05e-06,
+    "b_a": 0.00015,
+    "F_a": 0.0008,
+    "b_p": 2.6e-05,
+    "F_p": 5.2e-05
+  },
+  "lumped": {
+    "J0": 0.0001468428148,
+    "J1": 5.33492368e-05,
+    "J2": 5.48092368e-05,
+    "K": 5.17566456e-05,
+    "G": 0.00814127976,
+    "b_a": 0.00015,
+    "F_a": 0.0008,
+    "b_p": 2.6e-05,
+    "F_p": 5.2e-05
+  },
+  "ratios": {
+    "kappa": 0.9443051686499674,
+    "rho": 0.9733621541688754,
+    "omega2": 148.53846240748967,
+    "beta": 0.4743725969926295,
+    "phi": 0.948745193985259
+  },
+  "added_mass": {
+    "mass": 0.01003,
+    "radius": 0.0065,
+    "length": 0.005,
+    "d1": 0.0253,
+    "d2": 0.0452
+  },
+  "mujoco_values": {
+    "arm_mass": 0.03784,
+    "arm_com": [
+      0.0362,
+      0.0,
+      0.0156
+    ],
+    "arm_I": [
+      5.55e-06,
+      2.16e-05,
+      2.115e-05,
+      0.0,
+      -7.06e-07,
+      0.0
+    ],
+    "arm_armature": 7.5e-06,
+    "arm_damping": 0.00015,
+    "arm_frictionloss": 0.0008,
+    "pen_mass": 0.01812,
+    "pen_com": [
+      -0.0009,
+      0.0,
+      -0.0458
+    ],
+    "pen_I": [
+      1.68e-05,
+      1.63e-05,
+      9.6e-07,
+      0.0,
+      1.05e-06,
+      0.0
+    ],
+    "pen_damping": 2.6e-05,
+    "pen_frictionloss": 5.2e-05
+  },
+  "sensors": {
+    "loop_rate_Hz": 500.0,
+    "timestamp_jitter_s": 5e-05,
+    "arm_encoder_bits": 14,
+    "arm_encoder_noise_counts": 0.5,
+    "as5600_bits": 12,
+    "as5600_noise_counts": 0.6,
+    "as5600_zero_offset_rad": 0.0541
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "note": "Bench values a scale and calipers give, all taken on the ASSEMBLED rig (nothing is disconnected). Centres of mass and inertias are NOT measured.",
+  "g": 9.81,
+  "added_mass_kg": 0.0100,
+  "added_mass_note": "about 10 g (e.g. two M6 nuts), weighed on a 0.1 g kitchen scale, taped on the pendulum centre line",
+  "added_mass_d1_m": 0.0250,
+  "added_mass_d2_m": 0.0450,
+  "added_mass_d_note": "pivot axis (608 centre) to the centre of the added mass, measured with calipers, +-0.5 mm. d1 for identification, d2 for validation. Keep d well away from g/omega^2 (about 66 mm), where adding mass does not change the swing frequency.",
+  "added_mass_dimensions_m": {"diameter": 0.013, "length": 0.005},
+  "r_m": 0.062,
+  "r_note": "motor axis to the 608 centre, from the CAD (printed, +-0.2 mm); only used to report the hinge-offset combination",
+  "m_pendulum_kg": 0.0181,
+  "m_pendulum_note": "OPTIONAL: only if the pendulum (with coin, magnet, 608 inner ring) was weighed before assembly. Needed only to turn G into a centre-of-mass distance. Set to null if not available."
+}

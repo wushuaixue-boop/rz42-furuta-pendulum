@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+tools/mj_runner
+*.exe
+.DS_Store
+Thumbs.db
+tools/libmjshim.so
+tools/render_replay
+results/*_tmp*

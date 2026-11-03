@@ -1,0 +1,6 @@
+{
+  "infill": 0.150, "shell_mm": 0.840, "rho_g_mm3": 0.001240,
+  "arm_z_mm": 91.000, "piv_x_mm": 62.000, "piv_z_mm": 14.000,
+  "arm": {"mass_g": 34.0778, "com_mm": [33.89529, 0.00001, 15.58104], "I_gmm2": [5006.0232, 19412.4504, 19040.9728, 0.0074, -636.3316, 0.0017], "parts": [["RZ42-003_Arm_608 (printed, 15% infill)", 16.181], ["RZ42-005_BearingHousing_608 (printed, 15% infill)", 4.497], ["608ZZ outer ring/shields/balls", 9.000], ["AS5600 module", 1.500], ["heat insert (hub)", 0.450], ["heat insert (tab) x2", 0.900], ["M3x12 set screw", 0.550], ["M3x8 countersunk x2", 1.000]]},
+  "pendulum": {"mass_g": 17.2496, "com_mm": [-1.77483, -0.00000, -42.76699], "I_gmm2": [15613.4103, 15203.7316, 892.9719, 0.0000, 1309.3153, 0.0000], "parts": [["RZ42-004_Pendulum_608 (printed, 15% infill)", 6.600], ["coin UK 2p (7.12 g)", 7.120], ["magnet D6x2.5 NdFeB", 0.530], ["608ZZ inner ring", 3.000]]}
+}

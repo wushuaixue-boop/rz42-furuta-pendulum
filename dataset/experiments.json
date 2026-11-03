@@ -1,0 +1,165 @@
+{
+  "logged_columns": [
+    "t",
+    "arm_cmd",
+    "q1_meas",
+    "q2_meas"
+  ],
+  "sensors_nominal": {
+    "loop_rate_Hz": 500.0,
+    "timestamp_jitter_s": 5e-05,
+    "arm_encoder_bits": 14,
+    "arm_encoder_noise_counts": 0.5,
+    "as5600_bits": 12,
+    "as5600_noise_counts": 0.6
+  },
+  "experiments": {
+    "calib_rest": {
+      "purpose": "calibration",
+      "duration_s": 5.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "free_decay_010deg": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 10.0
+    },
+    "free_decay_030deg": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 29.999999999999996
+    },
+    "free_decay_060deg": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 59.99999999999999
+    },
+    "free_decay_090deg": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 90.0
+    },
+    "free_decay_150deg": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 150.0
+    },
+    "sine_A0.20_f0.80": {
+      "purpose": "train",
+      "duration_s": 10.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "sine_A0.20_f1.50": {
+      "purpose": "train",
+      "duration_s": 10.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "sine_A0.15_f1.95": {
+      "purpose": "train",
+      "duration_s": 10.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "sine_A0.20_f2.50": {
+      "purpose": "train",
+      "duration_s": 10.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "sine_A0.20_f3.00": {
+      "purpose": "train",
+      "duration_s": 10.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "chirp_0.3-4Hz": {
+      "purpose": "train",
+      "duration_s": 30.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "swing_A0.80_f1.20": {
+      "purpose": "train",
+      "duration_s": 12.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "swing_A1.00_f0.80": {
+      "purpose": "train",
+      "duration_s": 12.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "pump_A0.30_f1.95-1.30": {
+      "purpose": "train",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "massD1_decay_020deg": {
+      "purpose": "scale",
+      "duration_s": 15.0,
+      "setup": "added mass at distance d1 (bench.json)",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 20.0
+    },
+    "massD1_decay_060deg": {
+      "purpose": "scale",
+      "duration_s": 15.0,
+      "setup": "added mass at distance d1 (bench.json)",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 59.99999999999999
+    },
+    "multisine_val": {
+      "purpose": "validation",
+      "duration_s": 20.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "swing_A0.60_f1.30_val": {
+      "purpose": "validation",
+      "duration_s": 12.0,
+      "setup": "rig as built",
+      "arm": "position command (see arm_cmd)",
+      "pendulum_release_deg": "hanging at rest"
+    },
+    "free_decay_045deg_val": {
+      "purpose": "validation",
+      "duration_s": 15.0,
+      "setup": "rig as built",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 45.0
+    },
+    "massD2_decay_040deg_val": {
+      "purpose": "validation",
+      "duration_s": 15.0,
+      "setup": "added mass at distance d2 (bench.json)",
+      "arm": "held at 0 (driver enabled)",
+      "pendulum_release_deg": 40.0
+    }
+  }
+}

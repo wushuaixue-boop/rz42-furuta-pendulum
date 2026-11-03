@@ -1,0 +1,141 @@
+{
+  "metrics": {
+    "first_catch_s": 3.460000000002877,
+    "n_switches": 3,
+    "longest_balance_s": 18.445,
+    "settle_after_catch_s": 0.42000000000088633,
+    "balance_rms_delta_deg": 1.226099766089636,
+    "balance_max_delta_deg": 19.59960937500038,
+    "balance_max_arm_deg": 80.9845125062778,
+    "max_arm_deg": 91.82917255147278,
+    "max_cmd_rate_radps": 30.000000000000004,
+    "max_arm_speed_radps": 35.66586508966433,
+    "peak_motor_torque_Nm": 0.2461829380284285,
+    "torque_saturated_fraction": 0.0,
+    "final_mode": "LQR_BALANCE",
+    "final_delta_deg": 0.08789062500006013
+  },
+  "events": [
+    [
+      3.460000000002877,
+      "LQR_BALANCE",
+      "caught |d|=11.6 deg, |q2'|=7.80"
+    ],
+    [
+      30.079999999943237,
+      "SWING_UP",
+      "lost |d|=10.1 deg, q1=-1.51"
+    ],
+    [
+      32.47999999995469,
+      "LQR_BALANCE",
+      "caught |d|=9.0 deg, |q2'|=7.82"
+    ]
+  ],
+  "K": [
+    -1.1950795133846852,
+    1.1816765451957518,
+    -0.07586491555466908,
+    0.09645539891415991
+  ],
+  "ratios": {
+    "kappa": 0.944962464647251,
+    "rho": 0.9646959974841531,
+    "omega2": 148.33345325905896,
+    "beta": 0.47426605813191774,
+    "phi": 0.9532685439932119
+  },
+  "torque_hold": 0.45,
+  "config": {
+    "_doc": "All tunables of the closed loop. Units: rad, s, N m. See control/README.md.",
+    "plant": {
+      "name": "real",
+      "_doc": "real = hidden real-plant MuJoCo model (simulates the physical rig; its parameters are never given to the controller)"
+    },
+    "servo": {
+      "_doc": "ZDT stepper driver model (inside the 'hardware'). PLACEHOLDER values, not identified.",
+      "omega_s_hz": 15.0,
+      "zeta_s": 0.8,
+      "assumed_load_inertia": 0.00012848,
+      "torque_hold": 0.45,
+      "torque_derate_per_radps": 0.003,
+      "torque_min": 0.1,
+      "v_max": 30.0,
+      "encoder_bits": 14
+    },
+    "sensors": {
+      "arm_bits": 14,
+      "arm_noise_counts": 0.5,
+      "pend_bits": 12,
+      "pend_noise_counts": 0.6
+    },
+    "estimator": {
+      "velocity_cutoff_hz": 12.0
+    },
+    "controller": {
+      "rate_hz": 200.0,
+      "latency_s": 0.001,
+      "params_file": null,
+      "servo_model": {
+        "_doc": "what the controller assumes about the servo (placeholders)",
+        "omega_s_hz": 15.0,
+        "zeta_s": 0.8
+      },
+      "start_mode": "auto"
+    },
+    "lqr": {
+      "_doc": "Q weights on [q1, q2-pi, q1', q2'], R on q1_cmd",
+      "Q": [
+        100.0,
+        200.0,
+        1.0,
+        2.0
+      ],
+      "R": 10.0
+    },
+    "swingup": {
+      "pump_gain": 0.15,
+      "arm_amplitude_max": 0.6,
+      "energy_margin": 0.0,
+      "kick_amplitude": 0.15,
+      "pump_filter_hz": 5.0,
+      "kick_duration": 0.25,
+      "kick_rearm_s": 0.5,
+      "kick_energy": 0.5
+    },
+    "switching": {
+      "catch_angle_deg": 25.0,
+      "catch_rate": 8.0,
+      "catch_arm_max": 1.4,
+      "catch_arm_rate": 10.0,
+      "drop_angle_deg": 45.0,
+      "arm_limit": 1.5,
+      "min_dwell_s": 0.2,
+      "arm_return_rate": 0.3,
+      "cmd_slew_radps": 30.0,
+      "cmd_abs_limit": 1.7
+    },
+    "scenario": {
+      "duration": 40.0,
+      "q1_0": 0.0,
+      "q2_0": 0.0,
+      "qd1_0": 0.0,
+      "qd2_0": 0.0,
+      "seed": 0,
+      "disturbances": [
+        {
+          "t": 22.0,
+          "torque": 0.003,
+          "duration": 0.05,
+          "_doc": "moderate tap on the pendulum (adds ~2.7 rad/s): LQR should reject it"
+        },
+        {
+          "t": 30.0,
+          "torque": 0.03,
+          "duration": 0.05,
+          "_doc": "hard push (~27 rad/s): knocks it over; swing-up must recover"
+        }
+      ]
+    }
+  }
+}
