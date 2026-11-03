@@ -28,6 +28,7 @@ The repository covers the whole chain:
 | [`dataset/`](dataset) | Encoder-only experiment logs (`t, arm_cmd, q1_meas, q2_meas`), the bench measurements taken on the assembled rig, and the hidden ground truth (read only by notebook 03). |
 | [`control/`](control) | Swing-up, LQR, hybrid switching, ZDT position-servo model, MuJoCo closed-loop runner and viewer, validation tests, `config.json`. See [`docs/CONTROL_REPORT.md`](docs/CONTROL_REPORT.md). |
 | [`results/`](results) | Demo log, plots, video and validation summary of the controller. |
+| [`docs/`](docs) | [`DYNAMICS_AND_CONTROL.md`](docs/DYNAMICS_AND_CONTROL.md) (Kane's method → control → LQR, explained) and [`CONTROL_REPORT.md`](docs/CONTROL_REPORT.md) (controller design and validation). |
 | [`identification/`](identification) | `01_kane_model.ipynb`: equations of motion with Kane's method. `02_parameter_identification.ipynb`: encoder-only identification, the one to use on the real rig. `03_evaluate_against_truth.ipynb`: scoring for the simulation study only. `EXPERIMENT_PROTOCOL.md`: the lab procedure. |
 
 ## Quick start (Windows PowerShell, Python 3.10–3.12)
@@ -45,6 +46,14 @@ On Linux or macOS use `.venv/bin/python`.
 To look at the model: `.\.venv\Scripts\python.exe -m mujoco.viewer --mjcf mujoco\rz42_pendulum.xml`
 
 ## Swing-up + LQR demo (position command only)
+
+![swing-up and catch](results/demo_swingup.gif)
+
+Full videos:
+- [`results/demo_swingup_lqr.mp4`](results/demo_swingup_lqr.mp4): 40 s run with swing-up, LQR, tap, hard push and recovery;
+- [`mujoco/results/`](mujoco/results): open-loop sine tests of the nominal model.
+
+**How the model and the controller are derived** (Kane's method → state space → position-command model → LQR and swing-up) is explained step by step in [`docs/DYNAMICS_AND_CONTROL.md`](docs/DYNAMICS_AND_CONTROL.md).
 
 ```powershell
 cd $HOME\Desktop\RZ42_furuta_pendulum

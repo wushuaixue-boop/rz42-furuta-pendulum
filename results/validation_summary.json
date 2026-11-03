@@ -2,7 +2,7 @@
   "servo_step_test": {
     "actual": {
       "rise_10_90_ms": 28.900000000000006,
-      "overshoot_pct": 0.3048987764723565,
+      "overshoot_pct": 0.30489877648308406,
       "settle_2pct_ms": 53.3
     },
     "ideal_model": {
@@ -10,7 +10,7 @@
       "overshoot_pct": 1.4502725866599868,
       "settle_2pct_ms": 39.800000000000004
     },
-    "rms_deviation_pct_of_step": 1.2164667459827525
+    "rms_deviation_pct_of_step": 1.2164667467318635
   },
   "tests": [
     {
@@ -23,13 +23,13 @@
         "n_switches": 3,
         "longest_balance_s": 18.445,
         "settle_after_catch_s": 0.42000000000088633,
-        "balance_rms_delta_deg": 1.226099766089636,
-        "balance_max_delta_deg": 19.59960937500038,
-        "balance_max_arm_deg": 80.9845125062778,
-        "max_arm_deg": 91.82917255147278,
+        "balance_rms_delta_deg": 1.2334551378421714,
+        "balance_max_delta_deg": 20.039062499999666,
+        "balance_max_arm_deg": 80.76087401250497,
+        "max_arm_deg": 91.75758941991677,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 35.66586508966433,
-        "peak_motor_torque_Nm": 0.2461829380284285,
+        "max_arm_speed_radps": 35.68987924266407,
+        "peak_motor_torque_Nm": 0.24721949705404161,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 0.08789062500006013,
@@ -44,12 +44,12 @@
         [
           30.08,
           "SWING_UP",
-          "lost |d|=10.1 deg, q1=-1.51"
+          "lost |d|=10.4 deg, q1=-1.51"
         ],
         [
           32.48,
           "LQR_BALANCE",
-          "caught |d|=9.0 deg, |q2'|=7.82"
+          "caught |d|=11.2 deg, |q2'|=7.91"
         ]
       ]
     },
@@ -63,13 +63,13 @@
         "n_switches": 1,
         "longest_balance_s": 27.065,
         "settle_after_catch_s": 0.4650000000009813,
-        "balance_rms_delta_deg": 0.11921935607999887,
+        "balance_rms_delta_deg": 0.11925155577162797,
         "balance_max_delta_deg": 0.43945312499989353,
-        "balance_max_arm_deg": 0.6532357379695947,
-        "max_arm_deg": 34.954767793067504,
+        "balance_max_arm_deg": 0.6680023066270939,
+        "max_arm_deg": 34.95476779306747,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 19.233929460447097,
-        "peak_motor_torque_Nm": 0.2222274249953312,
+        "max_arm_speed_radps": 19.23392946044712,
+        "peak_motor_torque_Nm": 0.22222742499533155,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 2.0355549961366507e-13
@@ -92,16 +92,16 @@
         "n_switches": 1,
         "longest_balance_s": 27.415,
         "settle_after_catch_s": 0.3500000000007386,
-        "balance_rms_delta_deg": 0.11950498227516622,
+        "balance_rms_delta_deg": 0.11831679678824288,
         "balance_max_delta_deg": 0.4394531250000971,
-        "balance_max_arm_deg": 0.655011962699811,
-        "max_arm_deg": 34.96612144935992,
+        "balance_max_arm_deg": 0.7770881533094256,
+        "max_arm_deg": 34.9661214493599,
         "max_cmd_rate_radps": 30.0,
-        "max_arm_speed_radps": 17.501745691561247,
-        "peak_motor_torque_Nm": 0.19698902927856277,
+        "max_arm_speed_radps": 17.501745691561243,
+        "peak_motor_torque_Nm": 0.19698902927856288,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062499985657
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -121,16 +121,16 @@
         "n_switches": 1,
         "longest_balance_s": 28.04,
         "settle_after_catch_s": 0.3000000000002778,
-        "balance_rms_delta_deg": 0.11694576984779087,
+        "balance_rms_delta_deg": 0.11860679195373311,
         "balance_max_delta_deg": 0.4394531250000971,
-        "balance_max_arm_deg": 0.623280798021376,
+        "balance_max_arm_deg": 0.6520408446402638,
         "max_arm_deg": 34.99896255159796,
         "max_cmd_rate_radps": 30.000000000000004,
         "max_arm_speed_radps": 17.442238900276717,
         "peak_motor_torque_Nm": 0.20576202239175084,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062500006013
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -150,16 +150,16 @@
         "n_switches": 1,
         "longest_balance_s": 29.98,
         "settle_after_catch_s": 0.229999999999991,
-        "balance_rms_delta_deg": 0.12020583653027453,
+        "balance_rms_delta_deg": 0.11828556592114688,
         "balance_max_delta_deg": 0.43945312499999534,
-        "balance_max_arm_deg": 0.6483314928535742,
-        "max_arm_deg": 17.7897946715372,
-        "max_cmd_rate_radps": 10.25913752426738,
-        "max_arm_speed_radps": 6.777568005562822,
-        "peak_motor_torque_Nm": 0.11416076631930255,
+        "balance_max_arm_deg": 0.6564366088529746,
+        "max_arm_deg": 17.78979467254613,
+        "max_cmd_rate_radps": 9.426687164430753,
+        "max_arm_speed_radps": 6.777568005705166,
+        "peak_motor_torque_Nm": 0.11416076632283625,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062500000924
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -179,16 +179,16 @@
         "n_switches": 1,
         "longest_balance_s": 29.82,
         "settle_after_catch_s": 0.46999999999996456,
-        "balance_rms_delta_deg": 0.12136501043175199,
+        "balance_rms_delta_deg": 0.11704878089881922,
         "balance_max_delta_deg": 0.43945312499999534,
-        "balance_max_arm_deg": 0.7415470198719412,
-        "max_arm_deg": 24.967748494088067,
-        "max_cmd_rate_radps": 18.565380185196346,
-        "max_arm_speed_radps": 9.382910005544982,
-        "peak_motor_torque_Nm": 0.12796124470789125,
+        "balance_max_arm_deg": 0.8185740498115366,
+        "max_arm_deg": 24.967748495434925,
+        "max_cmd_rate_radps": 18.565380186060327,
+        "max_arm_speed_radps": 9.382910005713981,
+        "peak_motor_torque_Nm": 0.12796124471282136,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062500000924
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -208,16 +208,16 @@
         "n_switches": 3,
         "longest_balance_s": 16.37,
         "settle_after_catch_s": 1.5499999999963876,
-        "balance_rms_delta_deg": 1.8732450480661762,
+        "balance_rms_delta_deg": 2.009751967407744,
         "balance_max_delta_deg": 45.0,
-        "balance_max_arm_deg": 59.875170228882006,
-        "max_arm_deg": 86.27401153060512,
+        "balance_max_arm_deg": 59.937768545416034,
+        "max_arm_deg": 86.30392807455404,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 30.32565794627459,
-        "peak_motor_torque_Nm": 0.22321788740170723,
+        "max_arm_speed_radps": 30.32887447841348,
+        "peak_motor_torque_Nm": 0.22318282653228028,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.0
+        "final_delta_deg": 0.08789062500000924
       },
       "events": [
         [
@@ -228,12 +228,12 @@
         [
           30.08,
           "SWING_UP",
-          "lost |d|=50.6 deg, q1=-1.16"
+          "lost |d|=50.7 deg, q1=-1.16"
         ],
         [
-          33.56,
+          33.55,
           "LQR_BALANCE",
-          "caught |d|=24.3 deg, |q2'|=5.27"
+          "caught |d|=22.4 deg, |q2'|=7.82"
         ]
       ]
     },
@@ -247,16 +247,16 @@
         "n_switches": 3,
         "longest_balance_s": 18.66,
         "settle_after_catch_s": 0.435000000000918,
-        "balance_rms_delta_deg": 1.658081999220092,
-        "balance_max_delta_deg": 44.91210937499999,
-        "balance_max_arm_deg": 82.46013817220968,
-        "max_arm_deg": 94.266763446264,
+        "balance_rms_delta_deg": 1.6169404098367735,
+        "balance_max_delta_deg": 38.67187499999999,
+        "balance_max_arm_deg": 77.08211192264139,
+        "max_arm_deg": 91.90467263369041,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 35.251236656468315,
-        "peak_motor_torque_Nm": 0.25035608531895565,
+        "max_arm_speed_radps": 35.067572461140436,
+        "peak_motor_torque_Nm": 0.25198661917281245,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062500006013
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -267,12 +267,12 @@
         [
           30.09,
           "SWING_UP",
-          "lost |d|=52.3 deg, q1=-1.51"
+          "lost |d|=45.3 deg, q1=-1.43"
         ],
         [
-          31.07,
+          31.04,
           "LQR_BALANCE",
-          "caught |d|=24.8 deg, |q2'|=6.29"
+          "caught |d|=23.8 deg, |q2'|=6.94"
         ]
       ]
     },
@@ -286,13 +286,13 @@
         "n_switches": 3,
         "longest_balance_s": 10.865,
         "settle_after_catch_s": 0.41999999999902116,
-        "balance_rms_delta_deg": 1.2947792120387975,
-        "balance_max_delta_deg": 21.005859374998494,
-        "balance_max_arm_deg": 85.57318837477553,
-        "max_arm_deg": 94.61919330107428,
+        "balance_rms_delta_deg": 1.2895600450975306,
+        "balance_max_delta_deg": 21.357421875001176,
+        "balance_max_arm_deg": 85.6421405384102,
+        "max_arm_deg": 94.64527946776813,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 31.518308439042844,
-        "peak_motor_torque_Nm": 0.34584268390743045,
+        "max_arm_speed_radps": 31.46106682474113,
+        "peak_motor_torque_Nm": 0.3499220098061459,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 0.08789062499965303
@@ -306,12 +306,12 @@
         [
           30.07,
           "SWING_UP",
-          "lost |d|=15.5 deg, q1=-1.60"
+          "lost |d|=15.6 deg, q1=-1.60"
         ],
         [
           32.14,
           "LQR_BALANCE",
-          "caught |d|=5.4 deg, |q2'|=7.82"
+          "caught |d|=6.7 deg, |q2'|=7.82"
         ]
       ]
     },
@@ -325,16 +325,16 @@
         "n_switches": 3,
         "longest_balance_s": 18.665,
         "settle_after_catch_s": 0.3100000000006542,
-        "balance_rms_delta_deg": 1.5212904067969775,
-        "balance_max_delta_deg": 39.90234375000002,
-        "balance_max_arm_deg": 84.45737791104544,
-        "max_arm_deg": 94.26251480524438,
+        "balance_rms_delta_deg": 1.532521313291228,
+        "balance_max_delta_deg": 40.07812499999999,
+        "balance_max_arm_deg": 84.20530670319634,
+        "max_arm_deg": 94.19415961255172,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 35.15775243659646,
-        "peak_motor_torque_Nm": 0.2399982714243749,
+        "max_arm_speed_radps": 35.16600362942409,
+        "peak_motor_torque_Nm": 0.24084202087210005,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.1757812499999167
+        "final_delta_deg": 0.0
       },
       "events": [
         [
@@ -345,12 +345,12 @@
         [
           30.09,
           "SWING_UP",
-          "lost |d|=47.2 deg, q1=-1.54"
+          "lost |d|=47.4 deg, q1=-1.54"
         ],
         [
           31.05,
           "LQR_BALANCE",
-          "caught |d|=24.0 deg, |q2'|=6.78"
+          "caught |d|=24.3 deg, |q2'|=6.76"
         ]
       ]
     },
@@ -364,13 +364,13 @@
         "n_switches": 3,
         "longest_balance_s": 18.555,
         "settle_after_catch_s": 0.5650000000011923,
-        "balance_rms_delta_deg": 1.3365609892625092,
-        "balance_max_delta_deg": 21.26953124999969,
-        "balance_max_arm_deg": 84.47440688203885,
-        "max_arm_deg": 93.9245208804704,
+        "balance_rms_delta_deg": 1.2642171173742682,
+        "balance_max_delta_deg": 24.609374999999943,
+        "balance_max_arm_deg": 84.13629000356653,
+        "max_arm_deg": 93.83957889199053,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 36.4103498995033,
-        "peak_motor_torque_Nm": 0.27369886488034584,
+        "max_arm_speed_radps": 36.407396916282174,
+        "peak_motor_torque_Nm": 0.2763715593091876,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 0.08789062499965303
@@ -384,12 +384,12 @@
         [
           30.08,
           "SWING_UP",
-          "lost |d|=21.0 deg, q1=-1.56"
+          "lost |d|=21.7 deg, q1=-1.55"
         ],
         [
-          33.69,
+          33.74,
           "LQR_BALANCE",
-          "caught |d|=16.4 deg, |q2'|=7.81"
+          "caught |d|=24.6 deg, |q2'|=6.08"
         ]
       ]
     },
@@ -403,13 +403,13 @@
         "n_switches": 3,
         "longest_balance_s": 16.37,
         "settle_after_catch_s": 0.3899999999990911,
-        "balance_rms_delta_deg": 1.6384633807258735,
-        "balance_max_delta_deg": 27.5097656250005,
-        "balance_max_arm_deg": 77.38633910238131,
-        "max_arm_deg": 94.06344258980911,
+        "balance_rms_delta_deg": 1.6260512463845593,
+        "balance_max_delta_deg": 27.42187499999983,
+        "balance_max_arm_deg": 77.49280307162186,
+        "max_arm_deg": 94.08401377579825,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 36.34746400510933,
-        "peak_motor_torque_Nm": 0.3289270062454136,
+        "max_arm_speed_radps": 36.340944840205296,
+        "peak_motor_torque_Nm": 0.32840444299722527,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 0.08789062500006013
@@ -428,7 +428,7 @@
         [
           31.44,
           "LQR_BALANCE",
-          "caught |d|=22.2 deg, |q2'|=7.53"
+          "caught |d|=21.9 deg, |q2'|=7.48"
         ]
       ]
     },
@@ -442,13 +442,13 @@
         "n_switches": 3,
         "longest_balance_s": 18.44,
         "settle_after_catch_s": 0.4000000000008441,
-        "balance_rms_delta_deg": 1.2674462555685877,
+        "balance_rms_delta_deg": 1.2684987455381287,
         "balance_max_delta_deg": 19.86328124999995,
-        "balance_max_arm_deg": 81.12634598234443,
-        "max_arm_deg": 91.87359016730079,
+        "balance_max_arm_deg": 80.7567166975917,
+        "max_arm_deg": 91.75668045157215,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 35.64378834101771,
-        "peak_motor_torque_Nm": 0.24553240205814392,
+        "max_arm_speed_radps": 35.69415672810939,
+        "peak_motor_torque_Nm": 0.2474307598190158,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
         "final_delta_deg": 2.0355549961366507e-13
@@ -462,12 +462,12 @@
         [
           30.08,
           "SWING_UP",
-          "lost |d|=9.8 deg, q1=-1.51"
+          "lost |d|=10.3 deg, q1=-1.51"
         ],
         [
           32.47,
           "LQR_BALANCE",
-          "caught |d|=5.4 deg, |q2'|=7.93"
+          "caught |d|=5.7 deg, |q2'|=7.98"
         ]
       ]
     },
@@ -481,16 +481,16 @@
         "n_switches": 3,
         "longest_balance_s": 18.455000000000002,
         "settle_after_catch_s": 0.38500000000081247,
-        "balance_rms_delta_deg": 1.2349587279051233,
-        "balance_max_delta_deg": 20.742187500000146,
-        "balance_max_arm_deg": 80.90179732070467,
-        "max_arm_deg": 91.80437640656352,
+        "balance_rms_delta_deg": 1.234876774229537,
+        "balance_max_delta_deg": 19.951171874999808,
+        "balance_max_arm_deg": 81.09106893538699,
+        "max_arm_deg": 91.8623362923361,
         "max_cmd_rate_radps": 30.000000000000004,
-        "max_arm_speed_radps": 35.68187595434859,
-        "peak_motor_torque_Nm": 0.24689822041099957,
+        "max_arm_speed_radps": 35.6504713985998,
+        "peak_motor_torque_Nm": 0.24570218571252228,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.2636718749997733
+        "final_delta_deg": 0.1757812499999167
       },
       "events": [
         [
@@ -501,12 +501,12 @@
         [
           30.08,
           "SWING_UP",
-          "lost |d|=10.4 deg, q1=-1.51"
+          "lost |d|=10.1 deg, q1=-1.51"
         ],
         [
-          32.48,
+          32.47,
           "LQR_BALANCE",
-          "caught |d|=13.5 deg, |q2'|=7.79"
+          "caught |d|=8.8 deg, |q2'|=7.93"
         ]
       ]
     },
@@ -520,16 +520,16 @@
         "n_switches": 1,
         "longest_balance_s": 26.655,
         "settle_after_catch_s": 0.4650000000009813,
-        "balance_rms_delta_deg": 0.12023932516532784,
+        "balance_rms_delta_deg": 0.12027811413085286,
         "balance_max_delta_deg": 0.4394531250000971,
-        "balance_max_arm_deg": 0.5343012411493974,
-        "max_arm_deg": 35.246710978018946,
+        "balance_max_arm_deg": 0.6098505452803824,
+        "max_arm_deg": 35.24671097811198,
         "max_cmd_rate_radps": 30.0,
-        "max_arm_speed_radps": 16.63894595577975,
-        "peak_motor_torque_Nm": 0.22786273528259093,
+        "max_arm_speed_radps": 16.638945955929472,
+        "peak_motor_torque_Nm": 0.2278627352862337,
         "torque_saturated_fraction": 0.0,
         "final_mode": "LQR_BALANCE",
-        "final_delta_deg": 0.08789062500006013
+        "final_delta_deg": 0.0
       },
       "events": [
         [
